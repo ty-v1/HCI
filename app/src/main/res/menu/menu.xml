@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:theme="@style/ToolbarTheme"
+    android:id="@+id/mainMenu">
+
+    <item
+        android:id="@+id/planItem"
+        android:orderInCategory="100"
+        android:title="@string/menu_plan"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/subjectItem"
+        android:orderInCategory="101"
+        android:title="@string/menu_subject"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/scoreItem"
+        android:orderInCategory="102"
+        android:title="@string/menu_score"
+        app:showAsAction="never" />
+
+</menu>

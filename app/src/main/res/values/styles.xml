@@ -1,11 +1,33 @@
 <resources>
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <!--<style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">-->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+
+        <item name="android:toolbarStyle">@color/toolbarColor</item>
+
+        <!-- To change the popup menu and app text color  -->
+        <item name="android:textColor">@color/textColor</item>
+
+        <!-- To change the background of options menu-->
+        <item name="android:itemBackground">@color/menuBackground</item>
+
+        <item name="android:panelBackground">@color/menuBackground</item>
+        <!--<item name="android:panelFullBackground">@color/u</item>-->
+    </style>
+
+    <style name="BaseToolbar" parent="@style/Widget.AppCompat.Toolbar">
+        <item name="android:theme">@style/ToolbarTheme</item>
+    </style>
+
+    <style name="ToolbarTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="android:textColor">@color/menuTextColor</item>
+        <item name="android:textColorPrimary">@color/menuTextColor</item>
     </style>
 
 </resources>

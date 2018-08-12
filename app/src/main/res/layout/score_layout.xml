@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scoreLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/GPA" />
+
+        <TextView
+            android:id="@+id/GPA"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TableLayout
+            android:id="@+id/scoreTable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#000000">
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/subjectName"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/black"
+                    android:background="#FFFFFF"
+                    android:layout_marginLeft="1dip"
+                    android:layout_marginRight="1dip"
+                    android:layout_marginTop="1dip"
+                    android:layout_marginBottom="1dip" />
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/year"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/black"
+                    android:background="#FFFFFF"
+                    android:layout_marginLeft="1dip"
+                    android:layout_marginRight="1dip"
+                    android:layout_marginTop="1dip"
+                    android:layout_marginBottom="1dip"/>
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/semesterName"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/black"
+                    android:background="#FFFFFF"
+                    android:layout_marginLeft="1dip"
+                    android:layout_marginRight="1dip"
+                    android:layout_marginTop="1dip"
+                    android:layout_marginBottom="1dip" />
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/score"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/black"
+                    android:background="#FFFFFF"
+                    android:layout_marginLeft="1dip"
+                    android:layout_marginRight="1dip"
+                    android:layout_marginTop="1dip"
+                    android:layout_marginBottom="1dip" />
+
+            </TableRow>
+        </TableLayout>
+    </ScrollView>
+</LinearLayout>

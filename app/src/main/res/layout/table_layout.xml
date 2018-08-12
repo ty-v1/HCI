@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/topTableLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:entries="@array/yearList"
+        android:spinnerMode="dialog" />
+
+    <Spinner
+        android:id="@+id/spinner2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:entries="@array/semesterList"
+        android:spinnerMode="dialog" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableLayout
+            android:id="@+id/tableLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableRow
+                android:id="@+id/tableWeek"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#000000">
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/black"
+                    android:background="#FFFFFF"
+                    android:layout_marginLeft="1dip"
+                    android:layout_marginRight="1dip"
+                    android:layout_marginTop="1dip"
+                    android:layout_marginBottom="2dip"/>
+
+                <TextView
+                    android:id="@+id/rowMonday"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/monday"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/black"
+                    android:background="#FFFFFF"
+                    android:layout_marginLeft="1dip"
+                    android:layout_marginRight="1dip"
+                    android:layout_marginTop="1dip"
+                    android:layout_marginBottom="2dip" />
+
+                <TextView
+                    android:id="@+id/rowTuesday"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/tuesday"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/black"
+                    android:background="#FFFFFF"
+                    android:layout_marginLeft="1dip"
+                    android:layout_marginRight="1dip"
+                    android:layout_marginTop="1dip"
+                    android:layout_marginBottom="2dip"/>
+
+                <TextView
+                    android:id="@+id/rowWednesday"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/wednesday"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/black"
+                    android:background="#FFFFFF"
+                    android:layout_marginLeft="1dip"
+                    android:layout_marginRight="1dip"
+                    android:layout_marginTop="1dip"
+                    android:layout_marginBottom="2dip"/>
+
+
+                <TextView
+                    android:id="@+id/rowThursday"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/thursday"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/black"
+                    android:background="#FFFFFF"
+                    android:layout_marginLeft="1dip"
+                    android:layout_marginRight="1dip"
+                    android:layout_marginTop="1dip"
+                    android:layout_marginBottom="2dip"/>
+
+                <TextView
+                    android:id="@+id/rowFriday"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/friday"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/black"
+                    android:background="#FFFFFF"
+                    android:layout_marginLeft="1dip"
+                    android:layout_marginRight="1dip"
+                    android:layout_marginTop="1dip"
+                    android:layout_marginBottom="2dip"/>
+
+            </TableRow>
+        </TableLayout>
+    </ScrollView>
+</LinearLayout>
