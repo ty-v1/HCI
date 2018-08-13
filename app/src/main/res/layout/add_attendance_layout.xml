@@ -8,7 +8,7 @@
 
     <LinearLayout
         android:orientation="horizontal"
-        android:layout_width="wrap_content"
+        android:layout_width="300dp"
         android:layout_height="wrap_content">
 
         <TextView
@@ -33,16 +33,17 @@
 
         <Button
             android:id="@+id/bt_ok"
+            android:layout_weight="1"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:text="@string/ok" />
 
         <Button
             android:id="@+id/bt_close"
+            android:layout_weight="1"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:text="@string/close"
-            android:textColor="@android:color/white" />
+            android:text="@string/close" />
     </LinearLayout>
 
 </LinearLayout>

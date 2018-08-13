@@ -1,5 +1,6 @@
 package jp.ac.osaka_u.ty_v1.subject_management.subject;
 
+import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.app.Dialog;
 import android.content.Context;
@@ -35,7 +36,7 @@ public class TableFragment extends Fragment implements TableListener {
 
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+    public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         super.onCreateView(inflater, container, savedInstanceState);
 
         final Bundle bundle = getArguments();
@@ -49,10 +50,11 @@ public class TableFragment extends Fragment implements TableListener {
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
         tableLayout = view.findViewById(R.id.tableLayout);
 
-                (view.findViewById(R.id.tableButton1)).setOnClickListener(e -> update());
-
         final Spinner yearSpinner = view.findViewById(R.id.spinner1);
         final Spinner semesterSpinner = view.findViewById(R.id.spinner2);
+
+        yearSpinner.setSelection(year - 2015);
+
         instance = this;
 
         final AdapterView.OnItemSelectedListener spinnerListener = new AdapterView.OnItemSelectedListener() {
@@ -103,6 +105,7 @@ public class TableFragment extends Fragment implements TableListener {
         }
 
         for(int i=0; i<7; i++){
+            @SuppressLint("InflateParams")
             final TableRow tableRow = (TableRow)getLayoutInflater().inflate(R.layout.table_row, null);
 
             final TextView time = tableRow.findViewById(R.id.time);

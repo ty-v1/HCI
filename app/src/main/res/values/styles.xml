@@ -24,10 +24,12 @@
         <item name="android:theme">@style/ToolbarTheme</item>
     </style>
 
-    <style name="ToolbarTheme" parent="Theme.AppCompat.Light.NoActionBar">
+    <style name="ToolbarTheme" parent="Theme.AppCompat.NoActionBar">
         <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorSecondary">#FFFFFF</item>
         <item name="android:textColor">@color/menuTextColor</item>
         <item name="android:textColorPrimary">@color/menuTextColor</item>
+        <item name="android:toolbarStyle">@color/toolbarColor</item>
     </style>
 
 </resources>
